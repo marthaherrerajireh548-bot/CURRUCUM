@@ -1,0 +1,205 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/*=============================================================
+              SECCION GENERAL                           
+ ==============================================================*/
+.titulo {
+   width: 50%;
+   background-color: white;
+   border: 1px solid white;
+   border-radius: 15px;
+   align-items: center;
+   justify-content: center;
+   padding: 8px;
+   font-size: 1.0rem;
+   word-wrap: break-word;
+   overflow-wrap: break-word;
+   font-weight: bold;
+}
+.titulos {
+   width: 40%;
+   color: #fff;
+   background-color: gray;
+   border: 1px solid white;
+   border-radius: 15px;
+   align-items: center;
+   justify-content: center;
+   padding: 8px;
+   font-size: 1.0rem;
+   word-wrap: break-word;
+   overflow-wrap: break-word;
+   font-weight: bold;
+}
+   .titulo-tex {
+      font-size: 1.0rem;
+      line-height: 1.4;  
+   }
+   h1 {
+      font-size: 2.5rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      
+   }
+   .titulo-dos {
+      font-size: 1.5rem;
+      font-weight: 400px;
+      font-size: 20px;      
+   }
+  .nombre_puesto {
+   padding: 10px;
+  }
+
+/*=============================================================
+              SECCION HERO                             
+ ==============================================================*/
+.hero {
+   background-image: url('../pink.jpg');
+   min-height: 200px;
+   background-size: cover;
+   background-position: center;
+   border-radius: 20px;
+   margin: 20px;
+}
+
+.hero-img {
+   width: 50%;
+   /* En celulares usa el 50% del ancho disponible */
+   max-width: 500px;
+   /* En pantallas grandes no supera los 500px para no pixelarse */
+   height: auto;
+   border-radius: 50%;
+   margin: 20px;
+   border: 10px solid #F754FF;
+
+}
+
+.cabecera {
+   border: white;
+
+}
+
+.p2 {
+   max-width: 800px;
+   font-family: Arial, Helvetica, sans-serif;
+   justify-content: center;
+}
+
+/*=============================================================
+              SECCIONES                           
+ ==============================================================*/
+.contenedor {
+   max-width: 100%;
+   width: 100%;
+   display: flex;
+   gap: 40px;
+   box-sizing: border-box;
+   padding: 18px;
+
+}
+
+/*=============================================================
+              SECCION HABILIDADES                           
+ ==============================================================*/
+.columna {
+   background-color: #FFD3F0;
+   padding: 18px;
+   margin-bottom: 10px;
+   border-radius: 15px;
+   margin: 0 auto;
+}
+
+.columna-derecha {
+   width: 100%;
+   border-radius: 8px;  
+}
+
+table {
+   font-family: Arial, Helvetica, sans-serif;
+   border-collapse: collapse;
+   width: 100%;
+   font-size: 0.75rem;
+}
+
+/*=============================================================
+              SECCION DE CERTIFICACIONES                                  
+ ==============================================================*/
+.certificado-img {
+   display: none;
+   max-width: 500px;
+   height: auto;
+   margin-top: 10px;
+   border: 1px solid #ccc;
+
+}
+
+.contenedor-certificado {
+   max-height: 500px;
+   margin: 20px auto;
+   padding: 15px;
+   text-align: center;
+}
+
+button {
+   color: blue;
+   padding: 10px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   border-radius: initial;
+   transition: all 0.2s ease-in;  
+  }
+button:hover {
+   color: black;
+   background-color: #5C55CF;
+}
+
+/*=============================================================
+              @MEDIA QUERY                                    
+ ==============================================================*/
+@media (min-width:576px) {
+   .columna {
+      font-size: 16px;
+      line-height: 1.6;
+      padding: 20px;
+   }
+}
+
+/* @media query para pantallas pequeñas (menos de 768px) */
+@media (max-width: 767.98px) {
+
+   .table-responsive table thead th,
+   .table-responsive table tbody th,
+   .table-responsive table tbody td {
+      padding: 10pxpx;
+      /* Reduce el espacio interno para que quepa más contenido */
+      font-size: 8px;
+      margin: 15px 10px;
+   }   
+/*=============================================================
+              ESTILO RESPONSIVE DEL CERTIFICADO
+ ==============================================================*/
+}
+
+@media (max-width:768px) {
+   .contenedor-certificado {
+      height: 30%;
+      padding: 8px;
+      margin: 15px 8px;      
+   }
+  
+   button {
+      width: 70%;
+      padding: 12px;
+      font-size: 15px;
+   }
+
+   .certificado-img {
+      height: 50%;
+      border-radius: 10px;
+      align-items: center;
+
+   }
+
+}
